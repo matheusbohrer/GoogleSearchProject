@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search</title>
+    <link rel="stylesheet" href="style.css">
+    <style> 
+        #cat {
+            text-align: center;
+            margin-top: 200px; 
+        }
+        #cati {
+            width: 650px;
+            height: 40px;
+            border: 1px solid #dcdcdc;
+            border-radius: 20px;
+            padding: 0 15px;
+            font-size: 16px;
+            outline: none;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="car">
+    <a href="index.html">Google Search</a> <br>
+    <a href="advanced.html">Advanced Search</a>
+    </div>
+
+    <img class="img" src="Google.png" alt="Logo do Google" height="150px" style="position: relative; top: 150px;">
+
+    <div id="cat">
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" id="cati" name="q" placeholder="Search Google">
+            <input type="hidden" name="tbm" value="isch">
+            <input type="submit" value="Search Images">
+        </form>
+    </div>
+</body>
+</html>

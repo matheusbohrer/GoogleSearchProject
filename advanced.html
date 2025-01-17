@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="style.css">
+    <style> 
+        #fish {
+            text-align: center;
+            margin-top: 200px; 
+        }
+        #fisha {
+            width: 650px;
+            height: 40px;
+            border: 1px solid #dcdcdc;
+            border-radius: 20px;
+            padding: 0 15px;
+            font-size: 16px;
+            outline: none;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="car">
+    <a href="index.html">Google Search</a> <br>
+    <a href="image.html">Image Search</a>
+    </div>
+
+    <img class="img" src="Google.png" alt="Logo do Google" height="150px" style="position: relative; top: 150px;">
+
+    <div id="fish">
+        <form action="https://www.google.com/search" method="get">
+            <label style="color: white;">
+                All these words:
+                <input type="text" class="fisha" name="as_q">
+            </label>
+
+            <label  style="color: white;">
+                This exact word or phrase:
+                <input type="text" class="fisha" name="as_epq">
+            </label>
+
+            <label  style="color: white;">
+                Any of these words:
+                <input type="text" class="fisha" name="as_oq">
+            </label>
+
+            <label  style="color: white;">
+                None of these words:
+                <input type="text" class="fisha" name="as_eq">
+            </label>
+            <input type="submit" name="Advanced Search">
+        </form>
+    </div>
+</body>
+</html>
